@@ -1,10 +1,14 @@
 import React, { Component } from 'react'
 import Loader from './Loader'
+import Registration from './Registration'
 
 export default class Dashboard extends Component {
   render() {
     return (
-      <div>Dashboard<Loader/></div>
+      <div>Dashboard<Loader/>
+      <Registration/>
+      </div>
+
     )
   }
 }
