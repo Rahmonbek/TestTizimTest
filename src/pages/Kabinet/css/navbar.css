@@ -1,0 +1,86 @@
+.navbari {
+  background-color: rgb(6, 34, 109) !important;
+  /* height: 50px; */
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.nomi {
+  margin-left: 100px;
+  font-size: 22px;
+  color: white !important;
+}
+.navlink {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.surish {
+  margin-left: 80px;
+}
+.navbari .container {
+  margin: 20px 0;
+  margin-top: 10px !important;
+}
+@media screen and (max-width: 1000px) {
+  .nomi {
+    margin-left: 30px;
+    font-size: 22px;
+    color: white !important;
+  }
+  .navlink {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+  .surish {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .nomi {
+    margin-left: 0px;
+    font-size: 20px;
+    color: white !important;
+  }
+  .navlink {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+  .surish {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .nomi {
+    margin-left: 0px;
+    font-size: 18px;
+    color: white !important;
+  }
+  .navlink {
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+  .surish {
+    margin-left: 0px;
+  }
+}
+/* .navbar-toggler .navbar-toggler-icon .navbar-toggler-icon {
+  color: rgb(255, 7, 7) !important;
+} */
+.navbar-toggler-icon {
+  border-color: white !important;
+}
+.navbar-light .navbar-toggler {
+  color: white;
+  border-color: white !important;
+}

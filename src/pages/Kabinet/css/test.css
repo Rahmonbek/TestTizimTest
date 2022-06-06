@@ -1,0 +1,64 @@
+.yozuvt {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: rgb(80, 109, 190);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+}
+.tashqarit {
+  width: 100%;
+  height: 87vh;
+  padding-top: 25px;
+  /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  background-color: rgb(80, 109, 190) !important;
+}
+.tashqaritest {
+  width: 80%;
+  margin-left: 10%;
+  /* padding-top: 45px; */
+  height: calc(87vh - 50px);
+  background-color: white;
+}
+.toggl {
+  margin: 20px 100px;
+}
+.kin1 {
+  width: 150px;
+  height: 35px;
+}
+@media screen and (max-width: 500px) {
+  .yozuvt {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgb(80, 109, 190);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  .tashqarit {
+    width: 100%;
+    height: 87vh;
+    padding-top: 25px;
+    /* display: flex;
+      align-items: center;
+      justify-content: center; */
+    background-color: rgb(80, 109, 190) !important;
+  }
+  .tashqaritest {
+    width: 80%;
+    margin-left: 10%;
+    /* padding-top: 45px; */
+    height: calc(87vh - 50px);
+    background-color: white;
+  }
+  .toggl {
+    margin: 20px 100px;
+  }
+  .kin1 {
+    width: 150px;
+    height: 35px;
+  }
+}
