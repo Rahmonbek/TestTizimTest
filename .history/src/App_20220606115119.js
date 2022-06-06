@@ -12,15 +12,13 @@ export default class App extends Component {
 
         <BrowserRouter>
 <Routes>
+<Route path="/" element={<Dashboard/>}/>
 
-
-<Route path="" element={<Dashboard/>}/>
-
-  <Route path="kabinet">
-<Route path="" element={<Test/>}/>
-{/* <Route path="olimpiada"/>
+  <Route path="/kabinet">
+<Route path="/" element={<Test/>}/>
+<Route path="/olimpiada"/>
 <Route path="natija"/>
-<Route path="parol"/> */}
+<Route path="parol"/>
   </Route>
 </Routes>
         </BrowserRouter>

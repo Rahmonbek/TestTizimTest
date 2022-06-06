@@ -12,8 +12,6 @@ export default class App extends Component {
 
         <BrowserRouter>
 <Routes>
-
-
 <Route path="" element={<Dashboard/>}/>
 
   <Route path="kabinet">

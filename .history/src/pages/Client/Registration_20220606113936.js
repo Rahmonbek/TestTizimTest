@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import './../../css/Client/registration.css'
 import axios from "axios";
-import { Form, Input, Button, Checkbox, message } from "antd";
+import { Form Input, Button, Checkbox, message } from "antd";
 import loginImg from './photos/login.png'
-import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
+
 
 
 
@@ -70,40 +70,49 @@ export default class NormalLoginForm extends Component {
   };
 
   render() {
- 
-  
+    const { getFieldDecorator } = this.props.form;
+    if (this.isLoggedIn()) {
+      window.location = window.mainAppPage;
+    }
     return (
       <div>
-      <div className={' hidden'}>
+      <div className={this.isLoggedIn() ? ' ' : ' hidden'}>
         Successfully logged in...
       </div>
-      <div>
+      <div className={"lContainer"+(this.isLoggedIn() ? ' hidden' : ' ')}>
       <div className="lItem">
           <div className="loginImage">
             <img src={loginImg} width="300" style={{position: 'relative'}} alt="login"/>
           </div>
           <div className="loginForm">
             <h2>Login</h2>
-              <Form onSubmit={()=>{this.handleSubmit()}} className="login-form">
+              <Form onSubmit={this.handleSubmit} className="login-form">
               <FormItem>
-               
+                {getFieldDecorator("userName", {
+                  rules: [{ required: true, message: "Please enter your username" }]
+                })(
                   <Input
-                    prefix={<UserOutlined type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
+                    prefix={<Icon type="user" style={{ color: "rgba(0,0,0,.25)" }} />}
                     placeholder="Username"
                   />
-            
+                )}
               </FormItem>
               <FormItem>
-               
+                {getFieldDecorator("password", {
+                  rules: [{ required: true, message: "Please enter your Password" }]
+                })(
                   <Input
-                    prefix={<UserOutlined type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
+                    prefix={<Icon type="lock" style={{ color: "rgba(0,0,0,.25)" }} />}
                     type="password"
                     placeholder="Password"
                   />
-          
+                )}
               </FormItem>
               <FormItem>
-              
+                {getFieldDecorator("remember", {
+                  valuePropName: "checked",
+                  initialValue: true
+                })(<Checkbox>Remember me</Checkbox>)}
                 <Button
                   type="primary"
                   htmlType="submit"

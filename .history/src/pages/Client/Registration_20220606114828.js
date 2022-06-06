@@ -71,20 +71,22 @@ export default class NormalLoginForm extends Component {
 
   render() {
  
-  
+    if (this.isLoggedIn()) {
+      window.location = window.mainAppPage;
+    }
     return (
       <div>
-      <div className={' hidden'}>
+      <div className={this.isLoggedIn() ? ' ' : ' hidden'}>
         Successfully logged in...
       </div>
-      <div>
+      <div className={"lContainer"+(this.isLoggedIn() ? ' hidden' : ' ')}>
       <div className="lItem">
           <div className="loginImage">
             <img src={loginImg} width="300" style={{position: 'relative'}} alt="login"/>
           </div>
           <div className="loginForm">
             <h2>Login</h2>
-              <Form onSubmit={()=>{this.handleSubmit()}} className="login-form">
+              <Form onSubmit={this.handleSubmit} className="login-form">
               <FormItem>
                
                   <Input
@@ -103,7 +105,7 @@ export default class NormalLoginForm extends Component {
           
               </FormItem>
               <FormItem>
-              
+               <Checkbox>Remember me</Checkbox>)}
                 <Button
                   type="primary"
                   htmlType="submit"

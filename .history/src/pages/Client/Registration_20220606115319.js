@@ -74,10 +74,9 @@ export default class NormalLoginForm extends Component {
   
     return (
       <div>
-      <div className={' hidden'}>
-        Successfully logged in...
+    ully logged in...
       </div>
-      <div>
+      <div className={"lContainer"+(this.isLoggedIn() ? ' hidden' : ' ')}>
       <div className="lItem">
           <div className="loginImage">
             <img src={loginImg} width="300" style={{position: 'relative'}} alt="login"/>
