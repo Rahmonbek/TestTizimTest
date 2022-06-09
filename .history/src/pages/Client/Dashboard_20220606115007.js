@@ -5,7 +5,7 @@ import Registration from './Registration'
 export default class Dashboard extends Component {
   render() {
     return (
-      <div>
+      <div>Dashboard
         
         
         
