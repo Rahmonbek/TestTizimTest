@@ -1,4 +1,4 @@
-.loader {
+/* .loader {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -19,9 +19,9 @@
     display: inline-block;
     transform-origin: bottom center;
     border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-left-radius: 20px; */
     /*   box-shadow:5px 10px 20px inset rgba(255,23,25.2); */
-    animation: loader 1.2s linear infinite;
+    /* animation: loader 1.2s linear infinite;
   }
   .loader .bar1 {
     animation-delay: 0.1s;
@@ -52,7 +52,7 @@
     0% {
       transform: scaleY(0.1);
       /* background: ; */
-    }
+    /* }
     50% {
       transform: scaleY(1);
       background: yellowgreen;
@@ -62,4 +62,4 @@
       background: transparent;
     }
   }
-  
+   */ 
