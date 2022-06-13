@@ -8,7 +8,7 @@ import "./css/test.css";
 // import { EyeInvisibleOutlined, EyeTwoTone } from "@ant-design/icons";
 import { Button } from "react-bootstrap";
 
-export default class Test extends Component {
+export default class TestK extends Component {
   render() {
     return (
       <div>

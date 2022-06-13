@@ -4,7 +4,8 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 // import Test from "./pages/Kabinet/Test";
-import Dashboard from "./pages/Kabinet/Dasboardk";
+import Dasboard from "./pages/Kabinet/Dasboardk";
+import Dashboard from "./pages/Client/Dashboard";
 import Logink from "./pages/Kabinet/Logink";
 export default class App extends Component {
   render() {
@@ -12,17 +13,19 @@ export default class App extends Component {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="" element={<Navigate to="/login" />} />
-            <Route path="kabinet/*" element={<Dashboard />} />
+            <Route path="" element={<Dashboard/>} />
+           
             <Route path="login" element={<Logink />} />
 
-            {/* <Route path="kabinet">
-              <Route path="" element={<Test />} />
-              <Route path="olimpiada" />
-              <Route path="natija" />
-              <Route path="parol" />
-            </Route> */}
-          </Routes>
+<Route  path="kabinet">
+<Route path="" element={<Dasboard id={0} />} />
+<Route path="olimpiada" element={<Dasboard id={1} />} />
+          <Route path="natija" element={<Dasboard id={2} />} />
+          <Route path="parol" element={<Dasboard id={3} />} />
+          <Route path="testishlash" element={<Dasboard id={4} />} />
+</Route>
+          
+                      </Routes>
         </BrowserRouter>
       </div>
     );
